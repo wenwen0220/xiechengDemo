@@ -6,7 +6,7 @@ import re
 import datetime
 from datetime import date
 
-#爬取景区的code
+#根据景区的id爬取景区的评论
 class SceneryCommentSpider(scrapy.Spider):
 	name = "sceneryComment"
 
@@ -70,6 +70,7 @@ class SceneryCommentSpider(scrapy.Spider):
 			jsonArray=json.load(f)
 		for i in jsonArray:
 			# print(i['sceneryCode'])
+			#请求的内容根据自己要爬取的页面数，与页面size自定义
 			data={
 				"pageid": "10650000804",
 			    "viewid": i['sceneryCode'],
