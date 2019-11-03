@@ -65,10 +65,10 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 MYSQL_DB_NAME = 'spider'
-MYSQL_HOST = '140.143.246.53'
+MYSQL_HOST = '140.143.1.1'
 MYSQL_PORT = 3306
-MYSQL_USER = 'root'
-MYSQL_PASSWORD = '123456'
+MYSQL_USER = 'xiecheng'
+MYSQL_PASSWORD = 'xiecheng'
 # 
 ITEM_PIPELINES = {
    'xiechengDemo.pipelines.MySQLPipeline': 300,
